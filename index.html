@@ -537,6 +537,20 @@
             margin-bottom: 1rem;
         }
         
+        .product-badge.gold {
+            background: var(--core-gold);
+        }
+        
+        .product-card.featured {
+            border-color: var(--core-gold);
+            background: linear-gradient(135deg, var(--smoke) 0%, rgba(212, 175, 55, 0.1) 100%);
+        }
+        
+        .product-card.featured:hover {
+            border-color: var(--core-gold);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 40px rgba(212, 175, 55, 0.4);
+        }
+        
         .product-name {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.5rem;
@@ -594,6 +608,32 @@
             transform: translateY(-6px);
             border-color: var(--burgundy);
             box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 30px rgba(114, 47, 55, 0.3);
+        }
+        
+        .entry-card.featured {
+            border-color: var(--core-gold);
+            background: linear-gradient(135deg, var(--smoke) 0%, rgba(212, 175, 55, 0.1) 100%);
+            position: relative;
+        }
+        
+        .entry-card.featured::before {
+            content: 'FLAGSHIP';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--core-gold);
+            color: var(--noir);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            border-radius: 4px;
+        }
+        
+        .entry-card.featured:hover {
+            border-color: var(--core-gold);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 40px rgba(212, 175, 55, 0.4);
         }
         
         .entry-icon {
@@ -1003,13 +1043,19 @@
             </div>
             
             <div class="entries-grid">
+                <a href="https://ashandorbit.github.io/NextHeir-Dean-Martin-Launch/" target="_blank" class="entry-card featured">
+                    <div class="entry-icon">💎</div>
+                    <h3 class="entry-name">Dean Martin Ring</h3>
+                    <p class="entry-desc">The flagship collection. A Hollywood love story in diamonds. March 2026.</p>
+                </a>
+                
                 <a href="https://ashandorbit.github.io/Wedding-Landing-Page/" target="_blank" class="entry-card">
                     <div class="entry-icon">💍</div>
                     <h3 class="entry-name">Weddings</h3>
                     <p class="entry-desc">Rings. Traditions. The beginning of a family legacy.</p>
                 </a>
                 
-                <a href="https://ashandorbit.github.io/Funeral-Landing-Page/" target="_blank" class="entry-card">
+                <a href="https://ashandorbit.github.io/Memorial-Landing-Page-NH/" target="_blank" class="entry-card">
                     <div class="entry-icon">🕯️</div>
                     <h3 class="entry-name">Memorial</h3>
                     <p class="entry-desc">Preserve pieces from loved ones. Keep their story alive.</p>
@@ -1031,12 +1077,6 @@
                     <div class="entry-icon">🏛️</div>
                     <h3 class="entry-name">Museum</h3>
                     <p class="entry-desc">Institutional-grade preservation. White-glove service.</p>
-                </a>
-                
-                <a href="https://ashandorbit.github.io/NextHeir-Dean-Martin-Launch/" target="_blank" class="entry-card">
-                    <div class="entry-icon">⭐</div>
-                    <h3 class="entry-name">Dean Martin</h3>
-                    <p class="entry-desc">The flagship collection. A love story in diamonds.</p>
                 </a>
             </div>
         </div>
@@ -1097,8 +1137,8 @@
                     <span class="product-link">Coming Soon</span>
                 </a>
                 
-                <a href="https://ashandorbit.github.io/NextHeir-Dean-Martin-Launch/" target="_blank" class="product-card">
-                    <span class="product-badge">March 2026</span>
+                <a href="https://ashandorbit.github.io/NextHeir-Dean-Martin-Launch/" target="_blank" class="product-card featured">
+                    <span class="product-badge gold">March 2026</span>
                     <h3 class="product-name">Dean Martin Ring</h3>
                     <p class="product-desc">Spring engagement launch. A Hollywood love story in diamonds. The flagship NextHeir Collections piece with full verified provenance.</p>
                     <span class="product-link">View Collection</span>
@@ -1141,10 +1181,11 @@
             <div class="footer-col">
                 <h4>NextHeir</h4>
                 <a href="https://ashandorbit.github.io/Wedding-Landing-Page/" target="_blank">Weddings</a>
-                <a href="https://ashandorbit.github.io/Funeral-Landing-Page/" target="_blank">Memorial</a>
+                <a href="https://ashandorbit.github.io/Memorial-Landing-Page-NH/" target="_blank">Memorial</a>
                 <a href="https://ashandorbit.github.io/NextHeirFamily/" target="_blank">Family</a>
                 <a href="https://ashandorbit.github.io/NextHeirCollections/" target="_blank">Collections</a>
                 <a href="https://ashandorbit.github.io/NextHeirMuseum/" target="_blank">Museum</a>
+                <a href="https://ashandorbit.github.io/NextHeir-Dean-Martin-Launch/" target="_blank">Dean Martin</a>
             </div>
             
             <div class="footer-col">
